@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module xmlns:yap="http://www.yahoo.com/ns/yap">
+  <ModulePrefs title="YAP Apps presentation" title_url="" description="This application is a presentation to demonstrate the capabilities of YAP applications" author="" author_link="http://profiles.yahoo.com/u/24IRFWJOYEY2D5QPR7N72ABSW4" category="Tech-Tech">
+    <Icon></Icon>
+    <Locale lang="en" country="US"/>
+    <Require feature="yap.feature.classic"/>
+    <Require feature="opensocial-0.8"/>
+    <yap:Extension name="yap.gadgets.ShortDescription"></yap:Extension>
+    <yap:Extension name="yap.gadgets.CreatorImageUrl"></yap:Extension>
+    <yap:Extension name="yap.gadgets.CreatorWebsiteUrl"></yap:Extension>
+    <yap:Extension name="yap.gadgets.YahooComIconUrl"></yap:Extension>
+    <yap:Extension name="yap.gadgets.ScreenshotUrl"></yap:Extension>
+    <yap:Extension name="yap.gadgets.TouUrl"></yap:Extension>
+    <yap:Extension name="yap.gadgets.PrivacyUrl"></yap:Extension>
+    <yap:Extension name="yap.gadgets.ApplicationIconUrl"></yap:Extension>
+    <yap:Extension name="yap.gadgets.Tags"></yap:Extension>
+  </ModulePrefs>
+  <Content type="html" view="YahooSmallView"><![CDATA[<!-- BEGIN Default Content: this is shown until the user personalizes your app -->
+Hello World, my name is <yml:name uid="viewer" linked="true" capitalize="true"/>.]]></Content>
+  <Content type="html" view="YahooFullView" href="http://sudarmuthu.com/demos/yap/yml-demo/fullview.php"/>
+</Module>
