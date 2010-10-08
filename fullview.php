@@ -1,10 +1,15 @@
 <?php
+/**
+ * Fullview for YML demo YAP App
+ *
+ * @author: Sudar Muthu (http://sudarmuthu.com)
+ */
 
 require('../yos-social-php/lib/Yahoo.inc');
-$consumer_key = 'dj0yJmk9NURqc1JraHFRZGpJJmQ9WVdrOWVHVjJTMjFWTm5NbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1mMw--';
-$consumer_secret = '2473d92d5b41a0d05ecf24e239aca60fe8040af5';
+require('config.php');
+$appid = APP_ID;
 
-$session = YahooSession::requireSession($consumer_key, $consumer_secret);
+$session = YahooSession::requireSession(CONSUMER_KEY, CONSUMER_SECRET);
 
 if (!$session) {
     $user = $session->getSessionedUser();
@@ -13,8 +18,7 @@ if (!$session) {
     }
 }
 
-$appid = 'TgDteO6o';
-$app = new YahooApplication($consumer_key, $consumer_secret);
+$app = new YahooApplication(CONSUMER_KEY, CONSUMER_SECRET);
 
 $yap_examples = array(
     array('code' => '',
